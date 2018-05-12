@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="css/register.css" lang="text/css">
         <link type="text/css" rel="stylesheet" href="css/checkbox.css">
         <link rel="stylesheet" href="css/country.css" lang="text/css">
+        <script src="/js/googleMapsAPI.js"></script> 
     </head>
     <body>
         <form id="hostel">
