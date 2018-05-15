@@ -16,10 +16,30 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  getNewPosition();
+}
+
+
+console.log(address);
+window.onload=function(){
+var subButton = document.getElementById("Button");
+subButton.addEventListener("click", getNewAddress);
+}
+
+function getNewAddress() {
+  var country = document.getElementById('country').value;
+  var city = document.getElementById('city').value;
+  var adresa = document.getElementById('address').value;
+  address = country + ", " + city + ", " + adresa;
+  console.log(address);
+  getNewPosition();
+}
+
+function getNewPosition() {
   if (geocoder) {
     geocoder.geocode({
       'address': address
-    }, function(results, status) {
+    }, function position(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
           map.setCenter(results[0].geometry.location);

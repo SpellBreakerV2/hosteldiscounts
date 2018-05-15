@@ -3,7 +3,6 @@
         <link rel="stylesheet" href="css/register.css" lang="text/css">
         <link type="text/css" rel="stylesheet" href="css/checkbox.css">
         <link rel="stylesheet" href="css/country.css" lang="text/css">
-        <script src="/js/googleMapsAPI.js"></script> 
     </head>
     <body>
         <form id="hostel">
@@ -38,7 +37,6 @@
                 <option value="BTN">Bhutan</option>
             </select> <br>
             <input type="text" name="address" placeholder="Address"><br>
-            <!--google maps API should go in here-->
             <input type="text" name="phone" placeholder="Phone number"><br>
             <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="E-mail"><br>
             <!--room input implementation goes in here-->
